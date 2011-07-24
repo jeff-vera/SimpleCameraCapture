@@ -14,10 +14,6 @@
     shell:SystemTray.IsVisible="True">
 
     <Grid x:Name="LayoutRoot" Background="Transparent">
-        <!--<Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>-->
         <Button Content="Take A Pic" 
                 HorizontalAlignment="Center" 
                 Name="takeThePic" 
@@ -25,6 +21,11 @@
                 Margin="0,-1,0,0"  
                 Click="takeThePic_Click"
                 />
+        <Image HorizontalAlignment="Stretch"                
+               Name="takenPicture" 
+               Stretch="Fill" 
+               VerticalAlignment="Bottom"
+               Margin="0 100 0 0"/>
     </Grid>
  
 </phone:PhoneApplicationPage>
